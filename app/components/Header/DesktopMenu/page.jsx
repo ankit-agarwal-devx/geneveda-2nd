@@ -2,6 +2,59 @@
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import {
+  Activity,
+  Atom,
+  BarChart3,
+  BookMarked,
+  BookOpenText,
+  BriefcaseBusiness,
+  Bug,
+  Cpu,
+  Dna,
+  FileText,
+  FlaskConical,
+  FlaskRound,
+  GraduationCap,
+  House,
+  Leaf,
+  Microscope,
+  PenTool,
+  Pill,
+  Plane,
+  Presentation,
+  ScrollText,
+  ShieldCheck,
+  Sprout,
+  UtensilsCrossed,
+} from "lucide-react";
+
+const ICON_MAP = {
+  Activity,
+  Atom,
+  BarChart3,
+  BookMarked,
+  BookOpenText,
+  BriefcaseBusiness,
+  Bug,
+  Cpu,
+  Dna,
+  FileText,
+  FlaskConical,
+  FlaskRound,
+  GraduationCap,
+  House,
+  Leaf,
+  Microscope,
+  PenTool,
+  Pill,
+  Plane,
+  Presentation,
+  ScrollText,
+  ShieldCheck,
+  Sprout,
+  UtensilsCrossed,
+};
 
 const DesktopMenu = ({ items = [], depth = 0 }) => {
   const [activeIdx, setActiveIdx] = useState(null);
@@ -24,6 +77,7 @@ const DesktopMenu = ({ items = [], depth = 0 }) => {
   return (
     <ul className={listClass}>
       {(items || []).map((item, index) => {
+        const Icon = ICON_MAP[item.icon];
         const showChildren = activeIdx === index && item.children;
         const isActive =
           pathname === item.href ||
@@ -54,7 +108,16 @@ const DesktopMenu = ({ items = [], depth = 0 }) => {
                     }
                   `}
                 >
-                  {item.label}
+                  <span className="flex items-center gap-2">
+                    {Icon && (
+                      <Icon
+                        size={15}
+                        strokeWidth={2.1}
+                        style={{ color: item.color || "#64748B" }}
+                      />
+                    )}
+                    <span>{item.label}</span>
+                  </span>
                 </div>
                 {depth === 0 && (
                   <span
@@ -80,7 +143,16 @@ const DesktopMenu = ({ items = [], depth = 0 }) => {
     }
   `}
               >
-                <span>{item.label}</span>
+                <span className="flex items-center gap-2">
+                  {Icon && (
+                    <Icon
+                      size={15}
+                      strokeWidth={2.1}
+                      style={{ color: item.color || "#64748B" }}
+                    />
+                  )}
+                  <span>{item.label}</span>
+                </span>
                 <span
                   className={`ml-2 text-[10px] transition-transform duration-300 ${activeIdx === index ? "rotate-180" : ""}`}
                 >

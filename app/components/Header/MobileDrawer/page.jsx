@@ -2,10 +2,64 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import {
+  Activity,
+  Atom,
+  BarChart3,
+  BookMarked,
+  BookOpenText,
+  BriefcaseBusiness,
+  Bug,
+  Cpu,
+  Dna,
+  FileText,
+  FlaskConical,
+  FlaskRound,
+  GraduationCap,
+  House,
+  Leaf,
+  Microscope,
+  PenTool,
+  Pill,
+  Plane,
+  Presentation,
+  ScrollText,
+  ShieldCheck,
+  Sprout,
+  UtensilsCrossed,
+} from "lucide-react";
+
+const ICON_MAP = {
+  Activity,
+  Atom,
+  BarChart3,
+  BookMarked,
+  BookOpenText,
+  BriefcaseBusiness,
+  Bug,
+  Cpu,
+  Dna,
+  FileText,
+  FlaskConical,
+  FlaskRound,
+  GraduationCap,
+  House,
+  Leaf,
+  Microscope,
+  PenTool,
+  Pill,
+  Plane,
+  Presentation,
+  ScrollText,
+  ShieldCheck,
+  Sprout,
+  UtensilsCrossed,
+};
 
 const MobileDrawerItem = ({ item, depth, setDrawerOpen }) => {
   const [open, setOpen] = useState(false);
   const hasChildren = item.children && item.children.length > 0;
+  const Icon = ICON_MAP[item.icon];
 
   // Root level styles (depth 0) vs Nested level styles
   const isRoot = depth === 0;
@@ -27,8 +81,15 @@ const containerStyle = isRoot
             }`}
           >
             {/* Text pinned to the left */}
-            <span className="text-sm font-bold uppercase tracking-[0.15em] text-headerGray text-left">
-              {item.label}
+            <span className="text-sm font-bold uppercase tracking-[0.15em] text-headerGray text-left flex items-center gap-2">
+              {Icon && (
+                <Icon
+                  size={16}
+                  strokeWidth={2.1}
+                  style={{ color: item.color || "#64748B" }}
+                />
+              )}
+              <span>{item.label}</span>
             </span>
 
             {/* Icon pinned to the right */}
@@ -67,7 +128,16 @@ const containerStyle = isRoot
             }
           `}
         >
-          {item.label}
+          <span className="flex items-center gap-2">
+            {Icon && (
+              <Icon
+                size={16}
+                strokeWidth={2.1}
+                style={{ color: item.color || "#64748B" }}
+              />
+            )}
+            <span>{item.label}</span>
+          </span>
         </Link>
       )}
     </div>
