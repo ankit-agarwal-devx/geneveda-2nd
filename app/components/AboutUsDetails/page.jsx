@@ -44,16 +44,16 @@ const AboutUsDetails = () => {
             style={{ backgroundColor: "rgb(65, 100, 165)" }}
           >
             {/* Hover Fill: Secondary Green slides in from the left */}
-            <span className="absolute inset-0 w-0 h-full bg-secondary transition-all duration-500 ease-out group-hover:w-full -z-10"></span>
+            {/* <span className="absolute inset-0 w-0 h-full bg-secondary transition-all duration-500 ease-out group-hover:w-full -z-10"></span> */}
 
             {/* Glass Shimmer: High-speed light streak on hover */}
-            <span
+            {/* <span
               className="absolute inset-0 w-full h-full -z-10 transition-transform duration-1000 -translate-x-full group-hover:translate-x-full ease-in-out"
               style={{
                 background:
                   "linear-gradient(110deg, transparent, rgba(255,255,255,0.3), transparent)",
               }}
-            ></span>
+            ></span> */}
 
             {/* Text & Icon */}
             <span className="relative z-10 group-hover:text-black transition-colors duration-300 flex items-center justify-center sm:justify-center gap-2 sm:gap-3 text-sm sm:text-base">
@@ -102,7 +102,7 @@ const AboutUsDetails = () => {
                   <div className="absolute -inset-3 z-10 border border-black/10 rounded-[2.5rem] animate-[spin_25s_linear_infinite_reverse]" />
 
                   {/* Image */}
-                  <div className="relative z-20 w-full h-full overflow-hidden rounded-[2rem] brightness-90 group-hover:brightness-110 shadow-2xl">
+                  <div className="relative z-20 w-full h-full overflow-hidden rounded-[2rem] brightness-110 shadow-2xl">
                     <Image
                       src="/images/fromClient/boyWithMicroscope.jpeg"
                       alt="Research Excellence"
@@ -127,11 +127,11 @@ const AboutUsDetails = () => {
             <div className="group relative p-10 bg-gray-50/80 backdrop-blur-md rounded-[2rem] border border-emerald-200/60 shadow-[0_10px_28px_-22px_rgba(16,185,129,0.35)] hover:bg-white hover:border-emerald-300/70 hover:-translate-y-1 hover:shadow-[0_18px_45px_-24px_rgba(16,185,129,0.45)] transition-all duration-500 cursor-default overflow-hidden">
               <div className="pointer-events-none absolute -bottom-12 -right-10 w-40 h-40 rounded-full bg-emerald-400/20 blur-3xl opacity-40 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="flex flex-col md:flex-row md:items-center gap-8">
-                <div className="text-4xl font-black text-slate-200 group-hover:text-emerald-500 group-hover:scale-110 transition-all duration-500">
+                <div className="text-4xl font-black text-emerald-500 group-hover:scale-110 transition-all duration-500">
                   01
                 </div>
                 <div>
-                  <h3 className="text-xl font-medium text-headerGray mb-2 group-hover:translate-x-2 group-hover:text-emerald-700 transition-all duration-500">
+                  <h3 className="text-xl font-medium mb-2 group-hover:translate-x-2 text-emerald-700 transition-all duration-500">
                     Mission-Critical Research
                   </h3>
                   <p className="text-slate-600 leading-relaxed max-w-xl">
@@ -144,7 +144,7 @@ const AboutUsDetails = () => {
                   </p>
                 </div>
               </div>
-              <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="absolute top-6 right-6 opacity-100 transition-opacity">
                 <div className="w-8 h-8 border-t-2 border-r-2 border-emerald-500"></div>
               </div>
             </div>
@@ -153,11 +153,11 @@ const AboutUsDetails = () => {
             <div className="group relative p-10 bg-gray-50/80 backdrop-blur-md rounded-[2rem] border border-blue-200/60 shadow-[0_10px_28px_-22px_rgba(59,130,246,0.35)] hover:bg-white hover:border-blue-300/70 hover:-translate-y-1 hover:shadow-[0_18px_45px_-24px_rgba(59,130,246,0.45)] transition-all duration-500 cursor-default overflow-hidden">
               <div className="pointer-events-none absolute -bottom-12 -right-10 w-40 h-40 rounded-full bg-blue-400/20 blur-3xl opacity-40 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="flex flex-col md:flex-row md:items-center gap-8">
-                <div className="text-4xl font-black text-slate-200 group-hover:text-blue-500 group-hover:scale-110 transition-all duration-500">
+                <div className="text-4xl font-black text-blue-500 group-hover:scale-110 transition-all duration-500">
                   02
                 </div>
                 <div>
-                  <h3 className="text-xl font-medium text-headerGray mb-2 group-hover:translate-x-2 group-hover:text-blue-700 transition-all duration-500">
+                  <h3 className="text-xl font-medium mb-2 group-hover:translate-x-2 text-blue-700 transition-all duration-500">
                     Professional Training
                   </h3>
                   <p className="text-slate-600 leading-relaxed max-w-xl">
@@ -169,7 +169,7 @@ const AboutUsDetails = () => {
                   </p>
                 </div>
               </div>
-              <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="absolute top-6 right-6 opacity-100 transition-opacity">
                 <div className="w-8 h-8 border-t-2 border-r-2 border-blue-500"></div>
               </div>
             </div>
@@ -178,11 +178,11 @@ const AboutUsDetails = () => {
             <div className="group relative p-10 bg-gray-50/80 backdrop-blur-md rounded-[2rem] border border-amber-200/60 shadow-[0_10px_28px_-22px_rgba(245,158,11,0.35)] hover:bg-white hover:border-amber-300/70 hover:-translate-y-1 hover:shadow-[0_18px_45px_-24px_rgba(245,158,11,0.45)] transition-all duration-500 cursor-default overflow-hidden">
               <div className="pointer-events-none absolute -bottom-12 -right-10 w-40 h-40 rounded-full bg-amber-400/20 blur-3xl opacity-40 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="flex flex-col md:flex-row md:items-center gap-8">
-                <div className="text-4xl font-black text-slate-200 group-hover:text-amber-500 group-hover:scale-110 transition-all duration-500">
+                <div className="text-4xl font-black text-amber-500 group-hover:scale-110 transition-all duration-500">
                   03
                 </div>
                 <div>
-                  <h3 className="text-xl font-medium text-headerGray mb-2 group-hover:translate-x-2 group-hover:text-amber-700 transition-all duration-500">
+                  <h3 className="text-xl font-medium mb-2 group-hover:translate-x-2 text-amber-700 transition-all duration-500">
                     Global Connectivity
                   </h3>
                   <p className="text-slate-600 leading-relaxed max-w-xl">
@@ -195,7 +195,7 @@ const AboutUsDetails = () => {
                   </p>
                 </div>
               </div>
-              <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="absolute top-6 right-6 opacity-100 transition-opacity">
                 <div className="w-8 h-8 border-t-2 border-r-2 border-amber-500"></div>
               </div>
             </div>
