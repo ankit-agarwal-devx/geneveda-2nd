@@ -124,13 +124,14 @@ const AboutUsDetails = () => {
           {/* RIGHT COLUMN: INTERACTIVE HOVER PANELS */}
           <div className="lg:w-2/3 space-y-4">
             {/* PANEL 1 */}
-            <div className="group relative p-10 bg-gray-50/80 backdrop-blur-md rounded-[2rem] border border-transparent hover:border-black hover:bg-white transition-all duration-500 cursor-default">
+            <div className="group relative p-10 bg-gray-50/80 backdrop-blur-md rounded-[2rem] border border-transparent hover:bg-white hover:border-emerald-300/70 hover:-translate-y-1 hover:shadow-[0_18px_45px_-24px_rgba(16,185,129,0.45)] transition-all duration-500 cursor-default overflow-hidden">
+              <div className="pointer-events-none absolute -bottom-12 -right-10 w-40 h-40 rounded-full bg-emerald-400/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="flex flex-col md:flex-row md:items-center gap-8">
-                <div className="text-4xl font-black text-slate-200 group-hover:text-secondary transition-colors duration-500">
+                <div className="text-4xl font-black text-slate-200 group-hover:text-emerald-500 group-hover:scale-110 transition-all duration-500">
                   01
                 </div>
                 <div>
-                  <h3 className="text-xl font-medium text-headerGray mb-2 group-hover:translate-x-2 transition-transform duration-500">
+                  <h3 className="text-xl font-medium text-headerGray mb-2 group-hover:translate-x-2 group-hover:text-emerald-700 transition-all duration-500">
                     Mission-Critical Research
                   </h3>
                   <p className="text-slate-600 leading-relaxed max-w-xl">
@@ -144,18 +145,19 @@ const AboutUsDetails = () => {
                 </div>
               </div>
               <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
-                <div className="w-8 h-8 border-t-2 border-r-2 border-secondary"></div>
+                <div className="w-8 h-8 border-t-2 border-r-2 border-emerald-500"></div>
               </div>
             </div>
 
             {/* PANEL 2 */}
-            <div className="group relative p-10 bg-gray-50/80 backdrop-blur-md rounded-[2rem] border border-transparent hover:border-black hover:bg-white transition-all duration-500 cursor-default">
+            <div className="group relative p-10 bg-gray-50/80 backdrop-blur-md rounded-[2rem] border border-transparent hover:bg-white hover:border-blue-300/70 hover:-translate-y-1 hover:shadow-[0_18px_45px_-24px_rgba(59,130,246,0.45)] transition-all duration-500 cursor-default overflow-hidden">
+              <div className="pointer-events-none absolute -bottom-12 -right-10 w-40 h-40 rounded-full bg-blue-400/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="flex flex-col md:flex-row md:items-center gap-8">
-                <div className="text-4xl font-black text-slate-200 group-hover:text-secondary transition-colors duration-500">
+                <div className="text-4xl font-black text-slate-200 group-hover:text-blue-500 group-hover:scale-110 transition-all duration-500">
                   02
                 </div>
                 <div>
-                  <h3 className="text-xl font-medium text-headerGray mb-2 group-hover:translate-x-2 transition-transform duration-500">
+                  <h3 className="text-xl font-medium text-headerGray mb-2 group-hover:translate-x-2 group-hover:text-blue-700 transition-all duration-500">
                     Professional Training
                   </h3>
                   <p className="text-slate-600 leading-relaxed max-w-xl">
@@ -168,18 +170,19 @@ const AboutUsDetails = () => {
                 </div>
               </div>
               <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
-                <div className="w-8 h-8 border-t-2 border-r-2 border-secondary"></div>
+                <div className="w-8 h-8 border-t-2 border-r-2 border-blue-500"></div>
               </div>
             </div>
 
             {/* PANEL 3 */}
-            <div className="group relative p-10 bg-gray-50/80 backdrop-blur-md rounded-[2rem] border border-transparent hover:border-black hover:bg-white transition-all duration-500 cursor-default">
+            <div className="group relative p-10 bg-gray-50/80 backdrop-blur-md rounded-[2rem] border border-transparent hover:bg-white hover:border-amber-300/70 hover:-translate-y-1 hover:shadow-[0_18px_45px_-24px_rgba(245,158,11,0.45)] transition-all duration-500 cursor-default overflow-hidden">
+              <div className="pointer-events-none absolute -bottom-12 -right-10 w-40 h-40 rounded-full bg-amber-400/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="flex flex-col md:flex-row md:items-center gap-8">
-                <div className="text-4xl font-black text-slate-200 group-hover:text-secondary transition-colors duration-500">
+                <div className="text-4xl font-black text-slate-200 group-hover:text-amber-500 group-hover:scale-110 transition-all duration-500">
                   03
                 </div>
                 <div>
-                  <h3 className="text-xl font-medium text-headerGray mb-2 group-hover:translate-x-2 transition-transform duration-500">
+                  <h3 className="text-xl font-medium text-headerGray mb-2 group-hover:translate-x-2 group-hover:text-amber-700 transition-all duration-500">
                     Global Connectivity
                   </h3>
                   <p className="text-slate-600 leading-relaxed max-w-xl">
@@ -193,7 +196,7 @@ const AboutUsDetails = () => {
                 </div>
               </div>
               <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
-                <div className="w-8 h-8 border-t-2 border-r-2 border-secondary"></div>
+                <div className="w-8 h-8 border-t-2 border-r-2 border-amber-500"></div>
               </div>
             </div>
           </div>
