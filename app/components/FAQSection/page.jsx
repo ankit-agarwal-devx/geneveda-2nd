@@ -47,7 +47,7 @@ const FAQSection = () => {
             <span className="text-secondary font-black uppercase tracking-[0.4em] text-[10px] block mb-4">
               Information
             </span>
-            <h2 className="text-4xl font-black text-headerGray tracking-tighter leading-[0.9] mb-8">
+            <h2 className="text-4xl text-headerGray tracking-tighter leading-[0.9] mb-8">
               Frequently <br />
               <span className="text-secondary italic">Asked Questions</span>
             </h2>
@@ -76,7 +76,7 @@ const FAQSection = () => {
                   className="w-full px-8 py-7 flex items-center justify-between text-left"
                 >
                   <span
-                    className={`text-lg font-bold transition-colors ${openIndex === index ? "text-secondary" : "text-black"}`}
+                    className={`text-lg font-semibold transition-colors ${openIndex === index ? "text-secondary" : "text-black"}`}
                   >
                     {faq.question}
                   </span>

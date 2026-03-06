@@ -62,7 +62,7 @@ const ServiceSlider = () => {
       }}
     >
       <div className="container mx-auto px-6 mb-8 text-center">
-        <h2 className="text-2xl font-bold text-headerGray italic">
+        <h2 className="text-4xl text-headerGray italic">
           Our Core Specializations
         </h2>
       </div>
@@ -80,7 +80,7 @@ const ServiceSlider = () => {
               >
                 {service.icon}
               </div>
-              <span className="text-lg font-semibold text-black whitespace-nowrap">
+              <span className="text-lg text-black whitespace-nowrap">
                 {service.name}
               </span>
             </div>

@@ -55,13 +55,13 @@ const ReviewSection = () => {
             <span className="text-secondary font-black uppercase tracking-[0.4em] text-[10px] block mb-4">
               Testimonials
             </span>
-            <h2 className="text-4xl font-black text-headerGray tracking-tighter leading-[0.9]">
+            <h2 className="text-4xl text-headerGray tracking-tighter leading-[0.9]">
               Trusted by the <br />
               <span className="text-secondary italic">
                 Scientific Community
               </span>
             </h2>
-          <div className="h-1.5 w-100 bg-headerGray hidden md:block mt-2 mb-2"></div>
+          <div className="h-0.5 w-100 bg-headerGray hidden md:block mt-2 mb-2"></div>
           </div>
         </div>
 
@@ -115,7 +115,7 @@ const ReviewSection = () => {
                       )}
                     </div>
                     <div>
-                      <h4 className="font-black text-black text-sm uppercase tracking-wider">
+                      <h4 className="font-semibold text-black text-sm uppercase tracking-wider">
                         {review.name}
                       </h4>
                       {/* <p className="text-xs text-slate-400 font-bold">

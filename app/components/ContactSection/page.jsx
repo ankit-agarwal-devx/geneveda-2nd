@@ -87,7 +87,7 @@ const ContactSection = () => {
                 <form onSubmit={handleSubmit} className="w-full space-y-2">
                   <div className="grid md:grid-cols-2 gap-2">
                     <div className="space-y-2">
-                      <label className="text-[12px] font-black uppercase tracking-widest text-black ml-1">
+                      <label className="text-[12px] font-semibold uppercase tracking-widest text-black ml-1">
                         Full Name
                       </label>
                       <input
@@ -105,7 +105,7 @@ const ContactSection = () => {
                       />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-[12px] font-black uppercase tracking-widest text-black ml-1">
+                      <label className="text-[12px] font-semibold uppercase tracking-widest text-black ml-1">
                         Email Address
                       </label>
                       <input
@@ -125,7 +125,7 @@ const ContactSection = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-[12px] font-black uppercase tracking-widest text-black ml-1">
+                    <label className="text-[12px] font-semibold uppercase tracking-widest text-black ml-1">
                       Contact Number
                     </label>
                     <input
@@ -143,7 +143,7 @@ const ContactSection = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-[12px] font-black uppercase tracking-widest text-black ml-1">
+                    <label className="text-[12px] font-semibold uppercase tracking-widest text-black ml-1">
                       Select Service
                     </label>
                     <div className="relative">
@@ -183,7 +183,7 @@ const ContactSection = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-[12px] font-black uppercase tracking-widest text-black ml-1">
+                    <label className="text-[12px] font-semibold uppercase tracking-widest text-black ml-1">
                       Message
                     </label>
                     <textarea

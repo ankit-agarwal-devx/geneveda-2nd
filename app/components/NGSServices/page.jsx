@@ -50,7 +50,7 @@ const ngsServices = [
 
 const NGSServices = () => {
   return (
-    <section className="py-24 bg-tertiary relative overflow-hidden">
+    <section className="py-12 bg-tertiary relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         {/* Header Block */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">
@@ -96,7 +96,7 @@ const NGSServices = () => {
                   <div className="text-secondary p-2 bg-secondary/10 rounded-lg group-hover:bg-secondary group-hover:text-white transition-all">
                     {service.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-headerGray">
+                  <h3 className="text-xl font-semibold text-headerGray">
                     {service.name}
                   </h3>
                 </div>

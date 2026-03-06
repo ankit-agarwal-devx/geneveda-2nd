@@ -20,7 +20,7 @@ const AboutUsDetails = () => {
     className="mb-2"
   >
     {/* Refined Main Title */}
-    <h1 className="text-2xl md:text-2xl lg:text-4xl font-semibold text-headerGray tracking-tighter leading-[0.85] mb-2">
+    <h1 className="text-2xl md:text-2xl lg:text-4xl font text-headerGray tracking-tighter leading-[0.85] mb-2">
       WELCOME TO <span className="text-secondary italic">GENEVEDA</span> <span className="text-blueShade italic">BIOSCIENCES.</span>
     </h1>
 
@@ -82,7 +82,7 @@ const AboutUsDetails = () => {
           <div className="lg:w-1/3 space-y-12">
             <div className="lg:sticky lg:top-32 h-fit space-y-5">
               <div>
-                <h2 className="text-2xl font-black text-headerGray tracking-tighter leading-[0.9] mb-6">
+                <h2 className="text-2xl font-semibold text-headerGray tracking-tighter leading-[0.9] mb-6">
                   Who
                   <span className="text-secondary italic">We Are</span>
                 </h2>
@@ -130,7 +130,7 @@ const AboutUsDetails = () => {
                   01
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-headerGray mb-2 group-hover:translate-x-2 transition-transform duration-500">
+                  <h3 className="text-xl font-medium text-headerGray mb-2 group-hover:translate-x-2 transition-transform duration-500">
                     Mission-Critical Research
                   </h3>
                   <p className="text-slate-600 leading-relaxed max-w-xl">
@@ -155,7 +155,7 @@ const AboutUsDetails = () => {
                   02
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-headerGray mb-2 group-hover:translate-x-2 transition-transform duration-500">
+                  <h3 className="text-xl font-medium text-headerGray mb-2 group-hover:translate-x-2 transition-transform duration-500">
                     Professional Training
                   </h3>
                   <p className="text-slate-600 leading-relaxed max-w-xl">
@@ -179,7 +179,7 @@ const AboutUsDetails = () => {
                   03
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-headerGray mb-2 group-hover:translate-x-2 transition-transform duration-500">
+                  <h3 className="text-xl font-medium text-headerGray mb-2 group-hover:translate-x-2 transition-transform duration-500">
                     Global Connectivity
                   </h3>
                   <p className="text-slate-600 leading-relaxed max-w-xl">
