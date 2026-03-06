@@ -71,7 +71,7 @@ const Footer = () => {
 
             <p className="text-zinc-400 text-sm leading-relaxed max-w-[280px] font-medium">
               Advancing genomic research through specialized{" "}
-              <span className="text-secondary opacity-80">
+              <span className="text-orange-400 opacity-80">
                 computational training
               </span>{" "}
               and sequencing excellence.
@@ -79,17 +79,17 @@ const Footer = () => {
 
             <div className="space-y-3 pt-2">
     <div className="flex items-start gap-3 text-zinc-400">
-      <MapPin size={18} className="text-secondary mt-0.5 flex-shrink-0" />
+      <MapPin size={18} className="text-orange-400 mt-0.5 flex-shrink-0" />
       <span className="text-sm font-medium">New Hyde Park, NY 11040</span>
     </div>
     <div className="flex items-center gap-3 text-zinc-400">
-      <Phone size={18} className="text-secondary flex-shrink-0" />
+      <Phone size={18} className="text-orange-400 flex-shrink-0" />
       <a href="tel:+919008880022" className="text-sm font-medium hover:text-white transition-colors">
         (+91) 900-888-0022
       </a>
     </div>
     <div className="flex items-center gap-3 text-zinc-400">
-      <Mail size={18} className="text-secondary flex-shrink-0" />
+      <Mail size={18} className="text-orange-400 flex-shrink-0" />
       <a href="mailto:support@geneveda.com" className="text-sm font-medium hover:text-white transition-colors lowercase">
         support@geneveda.com
       </a>
@@ -101,7 +101,7 @@ const Footer = () => {
                 <a
                   key={i}
                   href="#"
-                  className="p-3 rounded-2xl bg-zinc-800 text-zinc-400 hover:bg-secondary hover:text-black transition-all duration-500 border border-zinc-700"
+                  className="p-3 rounded-2xl bg-zinc-800 text-zinc-400 hover:bg-orange-400 hover:text-black transition-all duration-500 border border-zinc-700"
                 >
                   <Icon size={20} strokeWidth={2.5} />
                 </a>
@@ -118,14 +118,14 @@ const Footer = () => {
               <li>
                 <a
                   href="/blogs"
-                  className="group flex items-center gap-2 text-zinc-300 hover:text-secondary text-sm font-semibold transition-colors"
+                  className="group flex items-center gap-2 text-zinc-300 hover:text-orange-400 text-sm font-semibold transition-colors"
                 >
                   <Newspaper
                     size={16}
-                    className="text-zinc-500 group-hover:text-secondary"
+                    className="text-zinc-500 group-hover:text-orange-400"
                   />
                   <span>Latest Blog Posts</span>
-                  <span className="bg-secondary/20 text-secondary text-[8px] px-1.5 py-0.5 rounded-md">
+                  <span className="bg-orange-400/20 text-orange-400 text-[8px] px-1.5 py-0.5 rounded-md">
                     NEW
                   </span>
                 </a>
@@ -167,9 +167,9 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Email address"
-                className="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all"
+                className="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:ring-2 focus:ring-orange-400/20 focus:border-orange-400 transition-all"
               />
-              <button className="absolute right-2 top-1.5 p-1.5 bg-secondary text-black rounded-lg hover:scale-105 transition-all">
+              <button className="absolute right-2 top-1.5 p-1.5 bg-orange-400 text-black rounded-lg hover:scale-105 transition-all">
                 <ArrowRight size={16} strokeWidth={3} />
               </button>
             </div>
@@ -183,7 +183,7 @@ const Footer = () => {
         <div className="pt-4 border-t border-zinc-800 flex flex-col items-center justify-center gap-4 text-center">
           <p className="text-[11px] font-bold text-white uppercase tracking-widest">
             Copyright ©2026
-            <span className="text-secondary"> GeneVeda Biosciences</span>. 
+            <span className="text-orange-400"> GeneVeda Biosciences</span>. 
             <span className="block sm:inline"> All rights reserved.</span>
           </p>
           <p className="text-[11px] font-bold text-white uppercase tracking-widest">
@@ -192,7 +192,7 @@ const Footer = () => {
               href="https://www.bharatai.store/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-secondary transition-colors duration-200 underline underline-offset-4 decoration-zinc-700"
+              className="text-orange-400 transition-colors duration-200 underline underline-offset-4 decoration-zinc-700"
             >
               Bharat AI Software
             </a>
