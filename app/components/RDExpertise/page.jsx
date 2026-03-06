@@ -229,10 +229,10 @@ const RDExpertise = () => {
           <span className="text-secondary font-black uppercase tracking-[0.4em] text-[10px] mb-4 block">
             Capabilities
           </span>
-          <h2 className="text-4xl font-black text-headerGray tracking-tighter mb-3">
+          <h2 className="text-4xl text-headerGray tracking-tighter mb-3">
             Our Core <span className="text-secondary">Services</span>
           </h2>
-          <div className="w-40 h-1 bg-black"></div>
+          <div className="w-40 h-0.5 bg-black"></div>
           <p className="mt-4 text-slate-500 max-w-3xl text-xl font-medium leading-relaxed">
             GeneVeda Biosciences provides a multidisciplinary approach to
             biotechnology, empowering researchers and industries with integrated
@@ -275,7 +275,7 @@ const RDExpertise = () => {
                     <div className={`p-3 rounded-xl text-white bg-gradient-to-br ${iconTheme.bg} transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110 shadow-lg shadow-black/25`}>
                       {categoryIcon}
                     </div>
-                    <h3 className="text-3xl font-black text-black leading-none group-hover:text-secondary transition-colors">
+                    <h3 className="text-3xl text-headerGray leading-none group-hover:text-secondary transition-colors">
                       {category.title}
                     </h3>
                   </div>
@@ -285,7 +285,7 @@ const RDExpertise = () => {
                   <div className={`p-3 rounded-xl text-white bg-gradient-to-br ${iconTheme.bg}`}>
                     {categoryIcon}
                   </div>
-                  <h3 className="text-3xl font-black text-headerGray leading-none">
+                  <h3 className="text-3xl text-headerGray leading-none">
                     {category.title}
                   </h3>
                 </div>

@@ -74,7 +74,7 @@ const ContactSection = () => {
                 {/* TOP HEADER */}
                 <div className="flex flex-col md:flex-row items-center justify-between pb-2">
                   <div className="text-center md:text-left">
-                    <h3 className="text-xl md:text-2xl font-black text-headerGray tracking-tighter uppercase">
+                    <h3 className="text-xl md:text-2xl text-headerGray tracking-tighter uppercase">
                       Send Us A <span className="text-blueShade">Message</span>
                     </h3>
                     <p className="text-slate-600 font-medium mt-1">

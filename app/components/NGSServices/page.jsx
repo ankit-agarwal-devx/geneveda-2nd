@@ -55,7 +55,7 @@ const NGSServices = () => {
         {/* Header Block */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">
           <div className="max-w-3xl">
-            <h2 className="text-4xl md:text-5xl font-bold text-headerGray mb-6">
+            <h2 className="text-4xl md:text-5xl text-headerGray mb-6">
               Next-Generation{" "}
               <span className="text-secondary italic">Sequencing</span> (NGS)
             </h2>
@@ -112,7 +112,7 @@ const NGSServices = () => {
             {/* Decorative Glow - Adjusted to be more visible on light BG */}
             <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-secondary/30 rounded-full blur-3xl"></div>
 
-            <h3 className="text-3xl font-bold mb-6 text-headerGray relative z-10">
+            <h3 className="text-3xl mb-6 text-headerGray relative z-10">
               Ready to start your{" "}
               <span className="text-secondary italic">project?</span>
             </h3>
