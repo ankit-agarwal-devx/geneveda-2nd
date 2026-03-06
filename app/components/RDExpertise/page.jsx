@@ -188,6 +188,13 @@ const serviceCategories = [
   },
 ];
 
+const iconThemes = [
+  "from-sky-600 via-cyan-500 to-emerald-500",
+  "from-violet-600 via-fuchsia-500 to-pink-500",
+  "from-amber-500 via-orange-500 to-rose-500",
+  "from-emerald-600 via-teal-500 to-blue-500",
+];
+
 const RDExpertise = () => {
   return (
     <section className="py-5 bg-white relative overflow-hidden">
@@ -225,20 +232,27 @@ const RDExpertise = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {" "}
           {/* Increased gap for visual breathing room */}
-          {serviceCategories.map((category, index) => (
-            <div
-              key={category.id}
-              className="group relative p-8 rounded-[3rem] transition-all duration-500
-                         bg-gray-50 border border-transparent hover:border-black hover:bg-white
+          {serviceCategories.map((category, index) => {
+            const iconTheme = iconThemes[index % iconThemes.length];
+            const categoryIcon = React.cloneElement(category.icon, {
+              className: "w-8 h-8 text-white",
+              strokeWidth: 2.2,
+            });
+
+            return (
+              <div
+                key={category.id}
+                className="group relative p-8 rounded-[3rem] transition-all duration-500
+                         bg-gray-50 border border-transparent hover:bg-white
                          hover:shadow-2xl flex flex-col items-start text-left overflow-hidden"
-            >
+              >
               {/* Category Image */}
               <div className="relative w-full h-48 rounded-[2rem] overflow-hidden mb-6 border border-slate-200">
                 <Image
                   src={category.imageUrl}
                   alt={category.title}
                   fill
-                  className="object-cover group-hover:scale-105  brightness-90 group-hover:brightness-110transition-transform duration-700 ease-in-out"
+                  className="object-cover group-hover:scale-105 brightness-90 group-hover:brightness-110 transition-transform duration-700 ease-in-out"
                 />
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
               </div>
@@ -246,8 +260,8 @@ const RDExpertise = () => {
               {category.href ? (
                 <Link href={category.href} className="group block">
                   <div className="flex items-center gap-6 mb-4 cursor-pointer">
-                    <div className="p-3 rounded-xl bg-black text-secondary transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110 shadow-lg shadow-secondary/10">
-                      {category.icon}
+                    <div className={`p-3 rounded-xl text-white bg-gradient-to-br ${iconTheme} transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110 shadow-lg shadow-black/25`}>
+                      {categoryIcon}
                     </div>
                     <h3 className="text-3xl font-black text-black leading-none group-hover:text-secondary transition-colors">
                       {category.title}
@@ -256,8 +270,8 @@ const RDExpertise = () => {
                 </Link>
               ) : (
                 <div className="flex items-center gap-6 mb-4">
-                  <div className="p-3 rounded-xl bg-black text-secondary">
-                    {category.icon}
+                  <div className={`p-3 rounded-xl text-white bg-gradient-to-br ${iconTheme}`}>
+                    {categoryIcon}
                   </div>
                   <h3 className="text-3xl font-black text-headerGray leading-none">
                     {category.title}
@@ -301,7 +315,8 @@ const RDExpertise = () => {
               {/* Bottom Glow */}
               <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-secondary/10 blur-[50px] group-hover:bg-secondary/20 transition-all rounded-full" />
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
