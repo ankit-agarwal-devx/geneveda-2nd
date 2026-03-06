@@ -84,7 +84,7 @@ const FAQSection = () => {
                     className={`shrink-0 ml-4 p-2 rounded-full transition-all duration-500 ${
                       openIndex === index
                         ? "bg-secondary text-black rotate-180"
-                        : "bg-black text-white"
+                        : "bg-white text-black"
                     }`}
                   >
                     {openIndex === index ? (
