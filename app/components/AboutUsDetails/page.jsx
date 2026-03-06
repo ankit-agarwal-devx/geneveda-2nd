@@ -124,8 +124,8 @@ const AboutUsDetails = () => {
           {/* RIGHT COLUMN: INTERACTIVE HOVER PANELS */}
           <div className="lg:w-2/3 space-y-4">
             {/* PANEL 1 */}
-            <div className="group relative p-10 bg-gray-50/80 backdrop-blur-md rounded-[2rem] border border-transparent hover:bg-white hover:border-emerald-300/70 hover:-translate-y-1 hover:shadow-[0_18px_45px_-24px_rgba(16,185,129,0.45)] transition-all duration-500 cursor-default overflow-hidden">
-              <div className="pointer-events-none absolute -bottom-12 -right-10 w-40 h-40 rounded-full bg-emerald-400/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="group relative p-10 bg-gray-50/80 backdrop-blur-md rounded-[2rem] border border-emerald-200/60 shadow-[0_10px_28px_-22px_rgba(16,185,129,0.35)] hover:bg-white hover:border-emerald-300/70 hover:-translate-y-1 hover:shadow-[0_18px_45px_-24px_rgba(16,185,129,0.45)] transition-all duration-500 cursor-default overflow-hidden">
+              <div className="pointer-events-none absolute -bottom-12 -right-10 w-40 h-40 rounded-full bg-emerald-400/20 blur-3xl opacity-40 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="flex flex-col md:flex-row md:items-center gap-8">
                 <div className="text-4xl font-black text-slate-200 group-hover:text-emerald-500 group-hover:scale-110 transition-all duration-500">
                   01
@@ -150,8 +150,8 @@ const AboutUsDetails = () => {
             </div>
 
             {/* PANEL 2 */}
-            <div className="group relative p-10 bg-gray-50/80 backdrop-blur-md rounded-[2rem] border border-transparent hover:bg-white hover:border-blue-300/70 hover:-translate-y-1 hover:shadow-[0_18px_45px_-24px_rgba(59,130,246,0.45)] transition-all duration-500 cursor-default overflow-hidden">
-              <div className="pointer-events-none absolute -bottom-12 -right-10 w-40 h-40 rounded-full bg-blue-400/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="group relative p-10 bg-gray-50/80 backdrop-blur-md rounded-[2rem] border border-blue-200/60 shadow-[0_10px_28px_-22px_rgba(59,130,246,0.35)] hover:bg-white hover:border-blue-300/70 hover:-translate-y-1 hover:shadow-[0_18px_45px_-24px_rgba(59,130,246,0.45)] transition-all duration-500 cursor-default overflow-hidden">
+              <div className="pointer-events-none absolute -bottom-12 -right-10 w-40 h-40 rounded-full bg-blue-400/20 blur-3xl opacity-40 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="flex flex-col md:flex-row md:items-center gap-8">
                 <div className="text-4xl font-black text-slate-200 group-hover:text-blue-500 group-hover:scale-110 transition-all duration-500">
                   02
@@ -175,8 +175,8 @@ const AboutUsDetails = () => {
             </div>
 
             {/* PANEL 3 */}
-            <div className="group relative p-10 bg-gray-50/80 backdrop-blur-md rounded-[2rem] border border-transparent hover:bg-white hover:border-amber-300/70 hover:-translate-y-1 hover:shadow-[0_18px_45px_-24px_rgba(245,158,11,0.45)] transition-all duration-500 cursor-default overflow-hidden">
-              <div className="pointer-events-none absolute -bottom-12 -right-10 w-40 h-40 rounded-full bg-amber-400/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="group relative p-10 bg-gray-50/80 backdrop-blur-md rounded-[2rem] border border-amber-200/60 shadow-[0_10px_28px_-22px_rgba(245,158,11,0.35)] hover:bg-white hover:border-amber-300/70 hover:-translate-y-1 hover:shadow-[0_18px_45px_-24px_rgba(245,158,11,0.45)] transition-all duration-500 cursor-default overflow-hidden">
+              <div className="pointer-events-none absolute -bottom-12 -right-10 w-40 h-40 rounded-full bg-amber-400/20 blur-3xl opacity-40 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="flex flex-col md:flex-row md:items-center gap-8">
                 <div className="text-4xl font-black text-slate-200 group-hover:text-amber-500 group-hover:scale-110 transition-all duration-500">
                   03
