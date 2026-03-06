@@ -1,8 +1,10 @@
 import React from 'react';
+import Link from 'next/link';
 
 const AutomationHero = () => {
   return (
-    <section className="relative min-h-[600px] w-full overflow-hidden bg-sky-950 text-white">
+    <Link href="/study-abroad" className="block cursor-pointer">
+    <section className="relative min-h-[600px] w-full overflow-hidden bg-sky-950 text-white transition-transform duration-300 hover:scale-[1.01]">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -14,7 +16,7 @@ const AutomationHero = () => {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 mx-auto max-w-7xl px-6 py-24 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 py-10 lg:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-8">
           
           {/* Left Column: Headline */}
@@ -33,7 +35,7 @@ const AutomationHero = () => {
             {/* Feature 1 */}
             <div className="group flex gap-4">
               <div className="mt-1 h-5 w-5 flex-shrink-0 border border-amber-300/60 p-1 group-hover:border-amber-300">
-                 <div className="h-full w-full bg-amber-300" />
+                 <div className="h-full w-full bg-orange-400" />
               </div>
               <div>
                 <h3 className="text-xl font-medium text-sky-50">Discover the right universities</h3>
@@ -47,7 +49,7 @@ const AutomationHero = () => {
             {/* Feature 2 */}
             <div className="group flex gap-4">
               <div className="mt-1 h-5 w-5 flex-shrink-0 border border-amber-300/60 p-1 group-hover:border-amber-300">
-                 <div className="h-full w-full bg-amber-300" />
+                 <div className="h-full w-full bg-orange-400" />
               </div>
               <div>
                 <h3 className="text-xl font-medium text-sky-50">End-to-end application support</h3>
@@ -61,7 +63,7 @@ const AutomationHero = () => {
             {/* Feature 3 */}
             <div className="group flex gap-4">
               <div className="mt-1 h-5 w-5 flex-shrink-0 border border-amber-300/60 p-1 group-hover:border-amber-300">
-                 <div className="h-full w-full bg-amber-300" />
+                 <div className="h-full w-full bg-orange-400" />
               </div>
               <div>
                 <h3 className="text-xl font-medium text-sky-50">Visa and pre-departure readiness</h3>
@@ -76,6 +78,7 @@ const AutomationHero = () => {
         </div>
       </div>
     </section>
+    </Link>
   );
 };
 
