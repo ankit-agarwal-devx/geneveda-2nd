@@ -18,17 +18,19 @@ export default function Home() {
     <div className="min-h-screen bg-zinc-50 font-sans">
       <CursorTracker />
       <Header/>
-      <AboutUsDetails />
-      <ServiceSlider />
-      <AutomationHero />
-      <RDExpertise />
-      <NGSServices />
-      {/* <CourseShowcase /> */}
-      {/* <StatSection /> */}
-      <ContactSection />
-      <ReviewSection />
-      {/* <TeamSection /> */}
-      <FAQSection />
+      <div className="mx-auto w-full max-w-[95vw]">
+        <AboutUsDetails />
+        <ServiceSlider />
+        <AutomationHero />
+        <RDExpertise />
+        <NGSServices />
+        {/* <CourseShowcase /> */}
+        {/* <StatSection /> */}
+        <ContactSection />
+        <ReviewSection />
+        {/* <TeamSection /> */}
+        <FAQSection />
+      </div>
     </div>
   );
 }
