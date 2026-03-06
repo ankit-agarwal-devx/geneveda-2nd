@@ -49,6 +49,14 @@ const ngsServices = [
 ];
 
 const NGSServices = () => {
+  const iconColorClasses = [
+    "text-blue-600 bg-blue-100 group-hover:bg-blue-600",
+    "text-emerald-600 bg-emerald-100 group-hover:bg-emerald-600",
+    "text-rose-600 bg-rose-100 group-hover:bg-rose-600",
+    "text-violet-600 bg-violet-100 group-hover:bg-violet-600",
+    "text-amber-600 bg-amber-100 group-hover:bg-amber-600",
+  ];
+
   return (
     <section className="py-12 bg-tertiary relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
@@ -93,7 +101,9 @@ const NGSServices = () => {
               {/* Content Container */}
               <div className="p-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="text-secondary p-2 bg-secondary/10 rounded-lg group-hover:bg-secondary group-hover:text-white transition-all">
+                  <div
+                    className={`p-2 rounded-lg transition-all group-hover:text-white ${iconColorClasses[index % iconColorClasses.length]}`}
+                  >
                     {service.icon}
                   </div>
                   <h3 className="text-xl font-semibold text-headerGray">
