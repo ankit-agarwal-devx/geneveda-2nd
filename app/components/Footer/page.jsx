@@ -19,7 +19,21 @@ import Link from "next/link";
 const Footer = () => {
   return (
     // Updated background to Zinc-900 (Deep Greyish Dark)
-    <footer className="bg-zinc-900 text-white w-full overflow-hidden border-t border-zinc-800">
+    <footer className="text-white w-full overflow-hidden">
+      <div className="w-full leading-none">
+        <svg
+          viewBox="0 0 1440 160"
+          preserveAspectRatio="none"
+          className="block w-full h-14 md:h-20 text-zinc-900"
+          aria-hidden="true"
+        >
+          <path
+            d="M0,96 C120,20 300,20 420,96 C540,150 720,150 840,96 C960,42 1140,42 1260,96 C1335,130 1395,122 1440,102 L1440,160 L0,160 Z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+      <div className="bg-zinc-900">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -185,6 +199,7 @@ const Footer = () => {
           </p>
         </div>
       </motion.div>
+      </div>
     </footer>
   );
 };
