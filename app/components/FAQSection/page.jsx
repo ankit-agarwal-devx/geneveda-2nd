@@ -65,15 +65,15 @@ const FAQSection = () => {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className={`border-2 rounded-[2rem] transition-all duration-500 overflow-hidden ${
+                className={`group/item border-2 rounded-[2rem] transition-all duration-500 overflow-hidden ${
                   openIndex === index
                     ? "border-black bg-white shadow-xl"
-                    : "border-slate-100 bg-gray-50"
+                    : "border-slate-100 bg-gray-50 hover:border-secondary/40 hover:bg-gradient-to-r hover:from-secondary/5 hover:to-orange-400/5 hover:shadow-lg"
                 }`}
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="group/faq w-full px-8 py-7 flex items-center justify-between text-left"
+                  className="group/faq w-full px-8 py-7 flex items-center justify-between text-left transition-transform duration-300 group-hover/item:-translate-y-0.5"
                 >
                   <span
                     className={`text-lg font-medium transition-all duration-300 ${
@@ -88,7 +88,7 @@ const FAQSection = () => {
                     className={`shrink-0 ml-4 p-2 rounded-full transition-all duration-500 ${
                       openIndex === index
                         ? "bg-secondary text-black rotate-180"
-                        : "bg-white text-black"
+                        : "bg-white text-black group-hover/faq:bg-secondary/10 group-hover/faq:text-secondary group-hover/faq:scale-110"
                     }`}
                   >
                     {openIndex === index ? (
