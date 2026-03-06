@@ -73,10 +73,14 @@ const FAQSection = () => {
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full px-8 py-7 flex items-center justify-between text-left"
+                  className="group/faq w-full px-8 py-7 flex items-center justify-between text-left"
                 >
                   <span
-                    className={`text-lg font-semibold transition-colors ${openIndex === index ? "text-secondary" : "text-black"}`}
+                    className={`text-lg font-medium transition-all duration-300 ${
+                      openIndex === index
+                        ? "text-secondary"
+                        : "text-black group-hover/faq:text-secondary group-hover/faq:translate-x-1"
+                    }`}
                   >
                     {faq.question}
                   </span>
