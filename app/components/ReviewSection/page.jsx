@@ -113,12 +113,12 @@ const ReviewSection = () => {
                   />
 
                   {/* Quote */}
-                  <div className={`absolute top-7 right-8 ${theme.quote} transition-colors`}>
+                  <div className={`absolute top-7 right-8 ${theme.quote} transition-colors z-0 pointer-events-none`}>
                     <Quote size={56} strokeWidth={1.7} />
                   </div>
 
                   {/* User Header */}
-                  <div className="flex items-center gap-4 mb-7">
+                  <div className="relative z-10 flex items-center gap-4 mb-7">
                     <div className={`relative w-20 h-20 rounded-2xl overflow-hidden bg-black text-secondary flex items-center justify-center border-2 ${theme.avatarBorder}`}>
                       {review.avatarUrl ? (
                         <Image
@@ -150,7 +150,7 @@ const ReviewSection = () => {
                   </div>
 
                   {/* Content */}
-                  <p className="text-slate-600 italic text-[18px] font-medium leading-relaxed mb-10 flex-grow">
+                  <p className="relative z-10 text-slate-600 italic text-[18px] font-medium leading-relaxed mb-10 flex-grow">
                     &quot;{review.content}&quot;
                   </p>
 
