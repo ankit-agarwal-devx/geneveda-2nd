@@ -12,9 +12,75 @@ import {
   Newspaper,
   MapPin,
   Phone,
+  Info,
+  PhoneCall,
+  Images,
+  ShieldCheck,
+  FileText,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
+const socialIcons = [
+  {
+    Icon: Facebook,
+    className:
+      "text-blue-400 bg-blue-500/15 border-blue-400/30 hover:bg-blue-500 hover:text-white",
+  },
+  {
+    Icon: Twitter,
+    className:
+      "text-sky-400 bg-sky-500/15 border-sky-400/30 hover:bg-sky-500 hover:text-white",
+  },
+  {
+    Icon: Instagram,
+    className:
+      "text-pink-400 bg-pink-500/15 border-pink-400/30 hover:bg-pink-500 hover:text-white",
+  },
+  {
+    Icon: Linkedin,
+    className:
+      "text-indigo-400 bg-indigo-500/15 border-indigo-400/30 hover:bg-indigo-500 hover:text-white",
+  },
+];
+
+const companyLinks = [
+  {
+    name: "About Us",
+    href: "/about-us",
+    icon: Info,
+    iconClass:
+      "text-cyan-400 bg-cyan-500/15 border-cyan-400/30 group-hover:bg-cyan-500 group-hover:text-white",
+  },
+  {
+    name: "Contact Us",
+    href: "/contact-us",
+    icon: PhoneCall,
+    iconClass:
+      "text-emerald-400 bg-emerald-500/15 border-emerald-400/30 group-hover:bg-emerald-500 group-hover:text-white",
+  },
+  {
+    name: "Gallery/Events",
+    href: "/gallery-events",
+    icon: Images,
+    iconClass:
+      "text-fuchsia-400 bg-fuchsia-500/15 border-fuchsia-400/30 group-hover:bg-fuchsia-500 group-hover:text-white",
+  },
+  {
+    name: "Privacy Policy",
+    href: "/privacy-policy",
+    icon: ShieldCheck,
+    iconClass:
+      "text-amber-400 bg-amber-500/15 border-amber-400/30 group-hover:bg-amber-500 group-hover:text-white",
+  },
+  {
+    name: "Terms & Conditions",
+    href: "/terms-and-conditions",
+    icon: FileText,
+    iconClass:
+      "text-indigo-400 bg-indigo-500/15 border-indigo-400/30 group-hover:bg-indigo-500 group-hover:text-white",
+  },
+];
 
 const Footer = () => {
   return (
@@ -81,14 +147,14 @@ const Footer = () => {
                 <div className="flex items-start gap-3 text-white">
                   <MapPin
                     size={18}
-                    className="text-orange-400 mt-0.5 flex-shrink-0"
+                    className="text-cyan-400 mt-0.5 flex-shrink-0"
                   />
                   <span className="text-sm font-medium">
                     New Hyde Park, NY 11040
                   </span>
                 </div>
                 <div className="flex items-center gap-3 text-white">
-                  <Phone size={18} className="text-orange-400 flex-shrink-0" />
+                  <Phone size={18} className="text-emerald-400 flex-shrink-0" />
                   <a
                     href="tel:+919008880022"
                     className="text-sm font-medium hover:text-white transition-colors"
@@ -97,7 +163,7 @@ const Footer = () => {
                   </a>
                 </div>
                 <div className="flex items-center gap-3 text-white">
-                  <Mail size={18} className="text-orange-400 flex-shrink-0" />
+                  <Mail size={18} className="text-violet-400 flex-shrink-0" />
                   <a
                     href="mailto:support@geneveda.com"
                     className="text-sm font-medium hover:text-white transition-colors lowercase"
@@ -108,11 +174,11 @@ const Footer = () => {
               </div>
 
               <div className="flex gap-3 pt-2">
-                {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
+                {socialIcons.map(({ Icon, className }, i) => (
                   <a
                     key={i}
                     href="#"
-                    className="p-3 rounded-2xl bg-zinc-800 text-white hover:bg-orange-400 hover:text-black transition-all duration-500 border border-zinc-700"
+                    className={`p-3 rounded-2xl transition-all duration-500 border ${className}`}
                   >
                     <Icon size={20} strokeWidth={2.5} />
                   </a>
@@ -150,22 +216,23 @@ const Footer = () => {
                 Company
               </h2>
               <ul className="text-white space-y-4 text-sm font-medium">
-                {[
-                  { name: "About Us", href: "/about-us" },
-                  { name: "Contact Us", href: "/contact-us" },
-                  { name: "Gallery/Events", href: "/gallery-events" },
-                  { name: "Privacy Policy", href: "/privacy-policy" },
-                  { name: "Terms & Conditions", href: "/terms-and-conditions" },
-                ].map((item) => (
+                {companyLinks.map((item) => {
+                  const LinkIcon = item.icon;
+                  return (
                   <li key={item.name}>
                     <a
                       href={item.href || "/"}
-                      className="hover:text-orange-400 transition-colors"
+                      className="group inline-flex items-center gap-2.5 hover:text-orange-400 transition-colors"
                     >
+                      <span
+                        className={`p-1.5 rounded-lg border transition-all duration-300 ${item.iconClass}`}
+                      >
+                        <LinkIcon size={14} strokeWidth={2.5} />
+                      </span>
                       {item?.name}
                     </a>
                   </li>
-                ))}
+                )})}
               </ul>
             </div>
 
