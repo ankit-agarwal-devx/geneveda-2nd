@@ -25,22 +25,22 @@ const socialIcons = [
   {
     Icon: Facebook,
     className:
-      "text-blue-400 bg-blue-500/15 border-blue-400/30 hover:bg-blue-500 hover:text-white",
+      "text-blue-400 hover:bg-blue-500 hover:text-white",
   },
   {
     Icon: Twitter,
     className:
-      "text-sky-400 bg-sky-500/15 border-sky-400/30 hover:bg-sky-500 hover:text-white",
+      "text-sky-400 hover:bg-sky-500 hover:text-white",
   },
   {
     Icon: Instagram,
     className:
-      "text-pink-400 bg-pink-500/15 border-pink-400/30 hover:bg-pink-500 hover:text-white",
+      "text-pink-400 hover:bg-pink-500 hover:text-white",
   },
   {
     Icon: Linkedin,
     className:
-      "text-indigo-400 bg-indigo-500/15 border-indigo-400/30 hover:bg-indigo-500 hover:text-white",
+      "text-indigo-400 hover:bg-indigo-500 hover:text-white",
   },
 ];
 
@@ -50,35 +50,35 @@ const companyLinks = [
     href: "/about-us",
     icon: Info,
     iconClass:
-      "text-cyan-400 bg-cyan-500/15 border-cyan-400/30 group-hover:bg-cyan-500 group-hover:text-white",
+      "text-cyan-400 group-hover:bg-cyan-500 group-hover:text-white",
   },
   {
     name: "Contact Us",
     href: "/contact-us",
     icon: PhoneCall,
     iconClass:
-      "text-emerald-400 bg-emerald-500/15 border-emerald-400/30 group-hover:bg-emerald-500 group-hover:text-white",
+      "text-emerald-400 group-hover:bg-emerald-500 group-hover:text-white",
   },
   {
     name: "Gallery/Events",
     href: "/gallery-events",
     icon: Images,
     iconClass:
-      "text-fuchsia-400 bg-fuchsia-500/15 border-fuchsia-400/30 group-hover:bg-fuchsia-500 group-hover:text-white",
+      "text-fuchsia-400 group-hover:bg-fuchsia-500 group-hover:text-white",
   },
   {
     name: "Privacy Policy",
     href: "/privacy-policy",
     icon: ShieldCheck,
     iconClass:
-      "text-amber-400 bg-amber-500/15 border-amber-400/30 group-hover:bg-amber-500 group-hover:text-white",
+      "text-amber-400 group-hover:bg-amber-500 group-hover:text-white",
   },
   {
     name: "Terms & Conditions",
     href: "/terms-and-conditions",
     icon: FileText,
     iconClass:
-      "text-indigo-400 bg-indigo-500/15 border-indigo-400/30 group-hover:bg-indigo-500 group-hover:text-white",
+      "text-indigo-400 group-hover:bg-indigo-500 group-hover:text-white",
   },
 ];
 
@@ -90,7 +90,7 @@ const Footer = () => {
         <svg
           viewBox="0 0 1440 160"
           preserveAspectRatio="none"
-          className="block w-full h-14 md:h-20 text-zinc-700"
+          className="block w-full h-14 md:h-20 text-[#4d524c]"
           aria-hidden="true"
         >
           <path
@@ -99,7 +99,7 @@ const Footer = () => {
           />
         </svg>
       </div>
-      <div className="bg-zinc-700">
+      <div className="bg-[#4d524c]">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -178,7 +178,7 @@ const Footer = () => {
                   <a
                     key={i}
                     href="#"
-                    className={`p-3 rounded-2xl transition-all duration-500 border ${className}`}
+                    className={`p-3 rounded-2xl transition-all duration-500 ${className}`}
                   >
                     <Icon size={20} strokeWidth={2.5} />
                   </a>
@@ -225,7 +225,7 @@ const Footer = () => {
                       className="group inline-flex items-center gap-2.5 hover:text-orange-400 transition-colors"
                     >
                       <span
-                        className={`p-1.5 rounded-lg border transition-all duration-300 ${item.iconClass}`}
+                        className={`p-1.5 rounded-lg transition-all duration-300 ${item.iconClass}`}
                       >
                         <LinkIcon size={14} strokeWidth={2.5} />
                       </span>
