@@ -77,7 +77,7 @@ const AboutUsDetails = () => {
         </div>
 
         {/* WHO WE ARE SECTION */}
-        <div className="flex flex-col lg:flex-row gap-16 mt-2">
+        <div className="flex flex-col lg:flex-row gap-16 mt-2 py-5">
           {/* LEFT COLUMN: HEADER + IMAGE + BUTTON */}
           <div className="lg:w-1/3 space-y-12">
             <div className="lg:sticky lg:top-32 h-fit space-y-5">
