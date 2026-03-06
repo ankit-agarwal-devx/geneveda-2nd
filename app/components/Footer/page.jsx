@@ -59,10 +59,10 @@ const Footer = () => {
 
                 {/* --- BRAND NAME (Optional, can be removed if you want icon-only) --- */}
                 <div className="flex flex-col justify-center">
-                  <span className="text-3xl md:text-2xl font-black text-white tracking-tighter leading-none">
+                  <span className="text-3xl md:text-2xl font-semibold text-white tracking-tighter leading-none">
                     GENEVEDA
                   </span>
-                  <span className="text-3xl md:text-2xl font-black text-black tracking-tighter leading-none">
+                  <span className="text-3xl md:text-2xl font-semibold text-black tracking-tighter leading-none">
                     <span className="text-secondary">BIOSCIENCES</span>
                   </span>
                 </div>

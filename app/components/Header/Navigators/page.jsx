@@ -48,10 +48,10 @@ const Navigators = () => {
 
               {/* --- BRAND NAME (Optional, can be removed if you want icon-only) --- */}
               <div className="flex flex-col justify-center">
-                <span className="text-2xl md:text-2xl font-black text-headerGray tracking-tighter leading-none">
+                <span className="text-2xl md:text-2xl font-semibold text-headerGray tracking-tighter leading-none">
                   GENEVEDA
                 </span>
-                <span className="text-2xl md:text-2xl font-black text-black tracking-tighter leading-none">
+                <span className="text-2xl md:text-2xl font-semibold text-black tracking-tighter leading-none">
                   <span className="text-secondary">BIOSCIENCES</span>
                 </span>
               </div>
@@ -105,10 +105,10 @@ const Navigators = () => {
 
             {/* TEXT COLUMN */}
             <div className="flex flex-col justify-center">
-  <span className="text-base sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-headerGray tracking-tighter leading-none">
+  <span className="text-base sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-headerGray tracking-tighter leading-none">
     GENEVEDA
   </span>
-  <span className="text-base sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-black tracking-tighter leading-none">
+  <span className="text-base sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold tracking-tighter leading-none">
     <span className="text-secondary">BIOSCIENCES</span>
   </span>
 </div>
