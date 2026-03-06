@@ -55,7 +55,7 @@ const FAQSection = () => {
               Can&apos;t find the answer you&apos;re looking for? Reach out to our support
               team for personalized assistance.
             </p>
-            <div className="w-16 h-16 rounded-3xl bg-black flex items-center justify-center text-secondary">
+            <div className="w-16 h-16 rounded-3xl bg-secondary/15 border border-secondary/25 flex items-center justify-center text-secondary">
               <HelpCircle size={32} />
             </div>
           </div>
