@@ -1,4 +1,5 @@
 import AboutUsDetails from "../components/AboutUsDetails/page";
+import AutomationHero from "../components/StudyAbroad/page";
 import ContactSection from "../components/ContactSection/page";
 import CourseShowcase from "../components/CourseShowcase/page";
 import CursorTracker from "../components/CursorTracker/page";
@@ -19,6 +20,7 @@ export default function Home() {
       <Header/>
       <AboutUsDetails />
       <ServiceSlider />
+      <AutomationHero />
       <RDExpertise />
       <NGSServices />
       {/* <CourseShowcase /> */}
