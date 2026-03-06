@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+   color-scheme: light;
+  --background: #ffffff;
+  --foreground: #171717;
+  --color-primary: 0 0 0; 
+  --color-secondary: 	83 200 30;    /* #283618 */
+  --color-tertiary: 254 250 224; 
+  --color-headerGray: 50 50 50;
+  --color-blueShade: 65 100 165;
+
+  --color-success: 22 163 74;
+  --color-danger: 220 38 38;
+}
+
+/* .dark {
+  --color-primary: 96 165 250;
+  --color-secondary: 192 132 252;
+} */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background-color: var(--background) !important; /* Force white */
+  color: var(--foreground) !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-secondary {
+    color: rgb(var(--color-secondary));
+  }
+
+  .bg-secondary {
+    background-color: rgb(var(--color-secondary));
+  }
+
+  .border-secondary {
+    border-color: rgb(var(--color-secondary));
+  }
+
+  .text-primary {
+    color: rgb(var(--color-primary));
+  }
+
+  .bg-primary {
+    background-color: rgb(var(--color-primary));
+  }
+
+  .text-tertiary {
+    color: rgb(var(--color-tertiary));
+  }
+
+  .bg-tertiary {
+    background-color: rgb(var(--color-tertiary));
+  }
+
+  .text-success {
+    color: rgb(var(--color-success));
+  }
+
+  .bg-success {
+    background-color: rgb(var(--color-success));
+  }
+
+  .text-danger {
+    color: rgb(var(--color-danger));
+  }
+
+  .bg-danger {
+    background-color: rgb(var(--color-danger));
+  }
+
+  .text-headerGray {
+    color: rgb(var(--color-headerGray));
+  }
+
+  .bg-headerGray {
+    background-color: rgb(var(--color-headerGray));
+  }
+
+  .text-blueShade {
+    color: rgb(var(--color-blueShade));
+  }
+
+  .bg-blueShade {
+    background-color: rgb(var(--color-blueShade));
+  }
+
+  .border-blueShade {
+    border-color: rgb(var(--color-blueShade));
+  }
+}
