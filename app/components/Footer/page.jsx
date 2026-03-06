@@ -24,7 +24,7 @@ const Footer = () => {
         <svg
           viewBox="0 0 1440 160"
           preserveAspectRatio="none"
-          className="block w-full h-14 md:h-20 text-zinc-900"
+          className="block w-full h-14 md:h-20 text-zinc-700"
           aria-hidden="true"
         >
           <path
@@ -33,7 +33,7 @@ const Footer = () => {
           />
         </svg>
       </div>
-      <div className="bg-zinc-900">
+      <div className="bg-zinc-700">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -69,7 +69,7 @@ const Footer = () => {
                 </div>
               </Link>
 
-              <p className="text-zinc-400 text-sm leading-relaxed max-w-[280px] font-medium">
+              <p className="text-white text-sm leading-relaxed max-w-[280px] font-medium">
                 Advancing genomic research through specialized{" "}
                 <span className="text-orange-400 opacity-80">
                   computational training
@@ -78,7 +78,7 @@ const Footer = () => {
               </p>
 
               <div className="space-y-3 pt-2">
-                <div className="flex items-start gap-3 text-zinc-400">
+                <div className="flex items-start gap-3 text-white">
                   <MapPin
                     size={18}
                     className="text-orange-400 mt-0.5 flex-shrink-0"
@@ -87,7 +87,7 @@ const Footer = () => {
                     New Hyde Park, NY 11040
                   </span>
                 </div>
-                <div className="flex items-center gap-3 text-zinc-400">
+                <div className="flex items-center gap-3 text-white">
                   <Phone size={18} className="text-orange-400 flex-shrink-0" />
                   <a
                     href="tel:+919008880022"
@@ -96,7 +96,7 @@ const Footer = () => {
                     (+91) 900-888-0022
                   </a>
                 </div>
-                <div className="flex items-center gap-3 text-zinc-400">
+                <div className="flex items-center gap-3 text-white">
                   <Mail size={18} className="text-orange-400 flex-shrink-0" />
                   <a
                     href="mailto:support@geneveda.com"
@@ -112,7 +112,7 @@ const Footer = () => {
                   <a
                     key={i}
                     href="#"
-                    className="p-3 rounded-2xl bg-zinc-800 text-zinc-400 hover:bg-orange-400 hover:text-black transition-all duration-500 border border-zinc-700"
+                    className="p-3 rounded-2xl bg-zinc-800 text-white hover:bg-orange-400 hover:text-black transition-all duration-500 border border-zinc-700"
                   >
                     <Icon size={20} strokeWidth={2.5} />
                   </a>
@@ -122,18 +122,18 @@ const Footer = () => {
 
             {/* Column 2: Resources & Blog */}
             <div>
-              <h2 className="mb-7 text-[10px] font-black text-zinc-500 uppercase tracking-[0.2em]">
+              <h2 className="mb-7 text-[10px] font-black text-white uppercase tracking-[0.2em]">
                 Knowledge Hub
               </h2>
               <ul className="space-y-4">
                 <li>
                   <a
                     href="/blogs"
-                    className="group flex items-center gap-2 text-zinc-300 hover:text-orange-400 text-sm font-semibold transition-colors"
+                    className="group flex items-center gap-2 text-white hover:text-orange-400 text-sm font-semibold transition-colors"
                   >
                     <Newspaper
                       size={16}
-                      className="text-zinc-500 group-hover:text-orange-400"
+                      className="text-white group-hover:text-orange-400"
                     />
                     <span>Latest Blog Posts</span>
                     <span className="bg-orange-400/20 text-orange-400 text-[8px] px-1.5 py-0.5 rounded-md">
@@ -146,10 +146,10 @@ const Footer = () => {
 
             {/* Column 3: Company */}
             <div>
-              <h2 className="mb-7 text-[10px] font-black text-zinc-500 uppercase tracking-[0.2em]">
+              <h2 className="mb-7 text-[10px] font-black text-white uppercase tracking-[0.2em]">
                 Company
               </h2>
-              <ul className="text-zinc-400 space-y-4 text-sm font-medium">
+              <ul className="text-white space-y-4 text-sm font-medium">
                 {[
                   { name: "About Us", href: "/about-us" },
                   { name: "Contact Us", href: "/contact-us" },
@@ -160,7 +160,7 @@ const Footer = () => {
                   <li key={item.name}>
                     <a
                       href={item.href || "/"}
-                      className="hover:text-white transition-colors"
+                      className="hover:text-orange-400 transition-colors"
                     >
                       {item?.name}
                     </a>
@@ -184,7 +184,7 @@ const Footer = () => {
                   <ArrowRight size={16} strokeWidth={3} />
                 </button>
               </div>
-              <p className="text-[10px] text-zinc-500 leading-tight">
+              <p className="text-[10px] text-white/90 leading-tight">
                 Get the latest updates in Bioinformatics and Genomics.
               </p>
             </div>
