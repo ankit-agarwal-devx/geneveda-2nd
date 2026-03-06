@@ -95,7 +95,7 @@ const ReviewSection = () => {
           <div className="pointer-events-none absolute inset-y-0 left-0 w-14 bg-gradient-to-r from-white to-transparent z-10" />
           <div className="pointer-events-none absolute inset-y-0 right-0 w-14 bg-gradient-to-l from-white to-transparent z-10" />
 
-          <div className="flex gap-8 w-max animate-scroll">
+          <div className="flex gap-8 w-max animate-scroll p-[20px]">
             {[...reviews, ...reviews].map((review, index) => (
               (() => {
                 const theme = cardThemes[index % cardThemes.length];
@@ -105,7 +105,7 @@ const ReviewSection = () => {
                 className="min-w-[380px] max-w-[380px]"
               >
                 <div
-                  className={`group relative p-10 bg-white rounded-[2.5rem] border-2 ${theme.border} transition-all duration-500 flex flex-col h-full overflow-hidden`}
+                  className={`group relative p-10 bg-white rounded-[2.5rem] border-2 ${theme.border} transition-transform duration-500 flex flex-col h-full overflow-hidden hover:scale-105`}
                 >
                   <div
                     className="pointer-events-none absolute -bottom-10 left-1/2 -translate-x-1/2 w-72 h-20 blur-2xl opacity-75 group-hover:opacity-100 transition-opacity duration-500"
