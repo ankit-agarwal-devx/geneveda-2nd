@@ -98,13 +98,15 @@ const DesktopMenu = ({ items = [], depth = 0 }) => {
               >
                 <div
                   className={`
-                    px-3 py-1 cursor-pointer flex justify-between items-center whitespace-nowrap transition-all duration-300 text-sm uppercase tracking-wider
+                    px-3 py-1 cursor-pointer text-[10px] flex justify-between items-center whitespace-nowrap transition-all duration-300 uppercase
                     ${
                       depth === 0
-                        ? isActive
-                          ? "text-blueShade"
-                          : "text-primary hover:text-amber-400"
-                        : "hover:bg-amber-400/5 hover:text-amber-400 px-6 py-2"
+                        ? `${
+                            isActive
+                              ? "text-blueShade"
+                              : "text-primary hover:text-amber-400"
+                          } text-[10px] tracking-[0.08em]`
+                        : "text-sm tracking-wider hover:bg-amber-400/5 hover:text-amber-400 px-6 py-2"
                     }
                   `}
                 >
@@ -133,13 +135,15 @@ const DesktopMenu = ({ items = [], depth = 0 }) => {
               <div
                 className={`
     px-3 py-1 cursor-default flex justify-between items-center whitespace-nowrap
-    transition-all duration-300 text-sm uppercase tracking-wider
+    transition-all duration-300 uppercase text-[10px]
     ${
       depth === 0
-        ? isActive
-          ? "text-blueShade"
-          : "text-primary hover:text-amber-400"
-        : "hover:bg-amber-400/5 hover:text-amber-400 px-6 py-3"
+        ? `${
+            isActive
+              ? "text-blueShade"
+              : "text-primary hover:text-amber-400"
+          } text-[10px] tracking-[0.08em]`
+        : "text-[10px] tracking-wider hover:bg-amber-400/5 hover:text-amber-400 px-6 py-3"
     }
   `}
               >
