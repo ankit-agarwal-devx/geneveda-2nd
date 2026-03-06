@@ -38,6 +38,30 @@ const reviews = [
   },
 ];
 
+const cardThemes = [
+  {
+    border: "border-emerald-500",
+    quote: "text-emerald-100",
+    glow:
+      "radial-gradient(ellipse at 50% 100%, rgba(16,185,129,0.38), transparent 70%)",
+    avatarBorder: "border-emerald-500",
+  },
+  {
+    border: "border-amber-500",
+    quote: "text-amber-100",
+    glow:
+      "radial-gradient(ellipse at 50% 100%, rgba(245,158,11,0.35), transparent 70%)",
+    avatarBorder: "border-amber-500",
+  },
+  {
+    border: "border-sky-500",
+    quote: "text-sky-100",
+    glow:
+      "radial-gradient(ellipse at 50% 100%, rgba(14,165,233,0.35), transparent 70%)",
+    avatarBorder: "border-sky-500",
+  },
+];
+
 const ReviewSection = () => {
   return (
     <section
@@ -73,63 +97,67 @@ const ReviewSection = () => {
 
           <div className="flex gap-8 w-max animate-scroll">
             {[...reviews, ...reviews].map((review, index) => (
+              (() => {
+                const theme = cardThemes[index % cardThemes.length];
+                return (
               <div
                 key={`${review.id}-${index}`}
-                className="min-w-[340px] max-w-[340px]"
+                className="min-w-[380px] max-w-[380px]"
               >
-                <div className="group relative p-10 bg-gray-50 rounded-[3rem] border border-transparent hover:border-black hover:bg-white transition-all duration-500 flex flex-col h-full">
+                <div
+                  className={`group relative p-10 bg-white rounded-[2.5rem] border-2 ${theme.border} transition-all duration-500 flex flex-col h-full overflow-hidden`}
+                >
+                  <div
+                    className="pointer-events-none absolute -bottom-10 left-1/2 -translate-x-1/2 w-72 h-20 blur-2xl opacity-75 group-hover:opacity-100 transition-opacity duration-500"
+                    style={{ background: theme.glow }}
+                  />
+
                   {/* Quote */}
-                  <div className="absolute top-8 right-10 text-slate-200 group-hover:text-secondary/20 transition-colors">
-                    <Quote size={48} fill="currentColor" />
+                  <div className={`absolute top-7 right-8 ${theme.quote} transition-colors`}>
+                    <Quote size={56} strokeWidth={1.7} />
                   </div>
 
-                  {/* Stars */}
-                  <div className="flex gap-1 mb-6">
-                    {[...Array(review.rating)].map((_, i) => (
-                      <Star
-                        key={i}
-                        size={14}
-                        className="text-secondary fill-secondary"
-                      />
-                    ))}
-                  </div>
-
-                  {/* Content */}
-                  <p className="text-slate-600 font-medium leading-relaxed mb-8 flex-grow">
-                    &quot;{review.content}&quot;
-                  </p>
-
-                  {/* User */}
-                  <div className="flex items-center gap-4 pt-6 border-t border-slate-200">
-                    <div className="relative w-12 h-12 rounded-full overflow-hidden bg-black text-secondary flex items-center justify-center">
+                  {/* User Header */}
+                  <div className="flex items-center gap-4 mb-7">
+                    <div className={`relative w-20 h-20 rounded-2xl overflow-hidden bg-black text-secondary flex items-center justify-center border-2 ${theme.avatarBorder}`}>
                       {review.avatarUrl ? (
                         <Image
                           src={review.avatarUrl}
                           alt={review.name}
                           fill
-                          sizes="48px"
+                          sizes="80px"
                           className="object-cover"
                         />
                       ) : (
-                        <User size={20} />
+                        <User size={26} />
                       )}
+                      <span className="absolute -right-1 -bottom-1 w-6 h-6 rounded-full bg-lime-500 border-[3px] border-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-black text-sm uppercase tracking-wider">
+                      <h4 className="font-semibold text-zinc-800 text-[26px] leading-none">
                         {review.name}
                       </h4>
-                      {/* <p className="text-xs text-slate-400 font-bold">
-                        {review.role}
-                      </p> */}
+                      <div className="flex gap-1">
+                      {[...Array(review.rating)].map((_, i) => (
+                        <Star
+                          key={i}
+                          size={14}
+                          className="text-amber-400 fill-amber-400"
+                        />
+                      ))}
+                    </div>
                     </div>
                   </div>
 
-                  {/* Corner */}
-                  <div className="absolute bottom-8 right-8 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <div className="w-6 h-6 border-b-2 border-r-2 border-secondary"></div>
-                  </div>
+                  {/* Content */}
+                  <p className="text-slate-600 italic text-[18px] font-medium leading-relaxed mb-10 flex-grow">
+                    &quot;{review.content}&quot;
+                  </p>
+
                 </div>
               </div>
+                );
+              })()
             ))}
           </div>
         </div>
