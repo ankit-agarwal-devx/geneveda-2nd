@@ -345,7 +345,7 @@ export default function EnvironmentalScienceLight() {
         <div className="max-w-7xl mx-auto px-6 mb-8">
           <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-blueShade text-center">Standard Inventory</h4>
         </div>
-        <div className="flex gap-12 justify-center flex-wrap opacity-20 brightness-90 group-hover:brightness-110">
+        <div className="flex gap-12 justify-center flex-wrap opacity-20 brightness-100">
           {['TOC-Analyzer', 'HPLC-SYSTEM', 'PCR-DETECTION', 'AAS-SPECTROMETER', 'COD-REACTOR'].map((item) => (
             <span key={item} className="text-3xl font-black uppercase tracking-tighter">{item}</span>
           ))}

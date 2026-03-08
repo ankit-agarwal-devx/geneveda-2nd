@@ -112,7 +112,7 @@ export default function BioPharmaPage() {
                     ))}
                   </div>
                </div>
-               <div className="absolute right-0 bottom-0 w-1/2 h-full opacity-100 brightness-90 group-hover:brightness-110 group-hover:opacity-10 transition-all duration-1000">
+               <div className="absolute right-0 bottom-0 w-1/2 h-full opacity-100 brightness-100 group-hover:opacity-10 transition-all duration-1000">
                   <Image src="https://images.unsplash.com/photo-1748278739348-d9886621530f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fE1lZGljaW5hbCUyMENoZW1pc3RyeXxlbnwwfHwwfHx8MA%3D%3D?q=80&w=800" fill className="object-cover" alt="Chemistry Lab" />
                </div>
             </motion.div>

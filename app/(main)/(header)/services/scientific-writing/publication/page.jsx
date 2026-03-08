@@ -312,15 +312,15 @@ export default function PublicationPage() {
       <section className="py-10 px-6 lg:px-20 bg-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <motion.div {...imageAnimate} className="relative h-96 rounded-[3rem] overflow-hidden shadow-lg">
-            <Image src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHVibGljYXRpb25zfGVufDB8fDB8fHww?q=80&w=800" fill className="object-cover brightness-90 group-hover:brightness-110 transition-all duration-700" alt="Lab Research" />
+            <Image src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHVibGljYXRpb25zfGVufDB8fDB8fHww?q=80&w=800" fill className="object-cover brightness-100 transition-all duration-700" alt="Lab Research" />
             <div className="absolute inset-0 bg-black/10 hover:bg-transparent transition-all" />
           </motion.div>
           <motion.div {...imageAnimate} className="relative h-96 rounded-[3rem] overflow-hidden shadow-lg lg:col-span-1">
-            <Image src="https://images.pexels.com/photos/5483063/pexels-photo-5483063.jpeg?q=80&w=800" fill className="object-cover brightness-90 group-hover:brightness-110 transition-all duration-700" alt="Data Analysis" />
+            <Image src="https://images.pexels.com/photos/5483063/pexels-photo-5483063.jpeg?q=80&w=800" fill className="object-cover brightness-100 transition-all duration-700" alt="Data Analysis" />
             <div className="absolute inset-0 bg-black/10 hover:bg-transparent transition-all" />
           </motion.div>
           <motion.div {...imageAnimate} className="relative h-96 rounded-[3rem] overflow-hidden shadow-lg md:col-span-2 lg:col-span-1">
-            <Image src="https://images.pexels.com/photos/32063096/pexels-photo-32063096.jpeg?q=80&w=800" fill className="object-cover brightness-90 group-hover:brightness-110 transition-all duration-700" alt="Microscope Work" />
+            <Image src="https://images.pexels.com/photos/32063096/pexels-photo-32063096.jpeg?q=80&w=800" fill className="object-cover brightness-100 transition-all duration-700" alt="Microscope Work" />
             <div className="absolute inset-0 bg-black/10 hover:bg-transparent transition-all" />
           </motion.div>
         </div>

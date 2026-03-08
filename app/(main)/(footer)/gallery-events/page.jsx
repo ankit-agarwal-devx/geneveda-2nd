@@ -130,7 +130,7 @@ export default function GalleryEventsPage() {
                 src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2000" // Generic lab work image
                 alt="Gallery Hero"
                 fill
-                className="object-cover brightness-90 group-hover:brightness-110 transition-all duration-700"
+                className="object-cover brightness-100 transition-all duration-700"
               />
             </div>
           </motion.div>
@@ -162,7 +162,7 @@ export default function GalleryEventsPage() {
                   src={image.src}
                   alt={image.alt}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500 brightness-90 group-hover:brightness-110"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 brightness-100"
                 />
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <span className="text-white text-lg font-bold uppercase tracking-wide">

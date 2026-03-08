@@ -177,7 +177,7 @@ export default function EventsPage() {
                 <Image
                   src={item.img}
                   fill
-                  className="object-cover brightness-90 group-hover:brightness-110 group-hover:scale-110 transition-all duration-700"
+                  className="object-cover brightness-100 group-hover:scale-110 transition-all duration-700"
                   alt={item.title}
                 />
                 <div className="absolute top-6 left-6 p-3 bg-white/90 backdrop-blur-sm rounded-2xl text-zinc-900">

@@ -252,7 +252,7 @@ export default function AgricultureLabPage() {
               <Image
                 src="https://images.unsplash.com/photo-1591216720574-ade558cb83ea?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNyb3BzfGVufDB8fDB8fHww?q=80&w=1200"
                 fill
-                className="object-cover brightness-90 group-hover:brightness-110 group-hover:scale-110 transition-all duration-1000 z-0"
+                className="object-cover brightness-100 group-hover:scale-110 transition-all duration-1000 z-0"
                 alt="Soil Microbiome Root Analysis"
               />
 

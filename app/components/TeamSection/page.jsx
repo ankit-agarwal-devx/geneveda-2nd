@@ -65,7 +65,7 @@ const TeamSection = () => {
                   src={member.image}
                   alt={member.name}
                   fill
-                  className="object-cover group-hover:scale-105 brightness-90 group-hover:brightness-110 transition-all duration-700 ease-in-out"
+                  className="object-cover group-hover:scale-105 brightness-100 transition-all duration-700 ease-in-out"
                 />
                 
               </div>

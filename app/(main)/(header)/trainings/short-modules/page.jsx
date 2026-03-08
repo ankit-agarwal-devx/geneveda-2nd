@@ -223,7 +223,7 @@ const ShortModulesPage = () => {
                     src={module.src}
                     alt={module.title}
                     fill
-                    className="object-cover brightness-90 group-hover:brightness-110 transition-all duration-700"
+                    className="object-cover brightness-100 transition-all duration-700"
                   />
 
                   {/* Overlay for Outcomes on Hover */}

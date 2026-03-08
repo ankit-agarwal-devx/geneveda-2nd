@@ -264,9 +264,9 @@ const RDExpertise = () => {
                   src={category.imageUrl}
                   alt={category.title}
                   fill
-                  className="object-cover group-hover:scale-105 brightness-90 group-hover:brightness-110 transition-transform duration-700 ease-in-out"
+                  className="object-cover group-hover:scale-105 brightness-100 group-hover:brightness-110 transition-transform duration-700 ease-in-out"
                 />
-                <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
+                <div className="absolute inset-0  transition-colors duration-500" />
               </div>
 
               {category.href ? (

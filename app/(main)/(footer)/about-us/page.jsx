@@ -91,7 +91,7 @@ export default function AboutPage() {
                 </div>
               ))}
             </div>
-            <div className="relative h-48 mt-8 rounded-2xl overflow-hidden brightness-90 group-hover:brightness-110 transition-all duration-500">
+            <div className="relative h-48 mt-8 rounded-2xl overflow-hidden brightness-100 transition-all duration-500">
               <Image
                 src="https://images.unsplash.com/photo-1758691736508-a85d1f7d5a77?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODB8fFNraWxsJTIwRGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDI%3D?q=80&w=800"
                 fill
@@ -132,7 +132,7 @@ export default function AboutPage() {
                 </li>
               ))}
             </ul>
-            <div className="relative h-48 rounded-2xl overflow-hidden brightness-90 group-hover:brightness-110 transition-all duration-500">
+            <div className="relative h-48 rounded-2xl overflow-hidden brightness-100 transition-all duration-500">
               <Image
                 src="https://images.unsplash.com/photo-1587955415524-bb264e518428?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8UmVzZWFyY2glMjBhbmQlMjBkZXZlbG9wbWVudHxlbnwwfHwwfHx8MA%3D%3D?q=80&w=800"
                 fill
